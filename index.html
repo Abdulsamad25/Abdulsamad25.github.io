@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution{
+      margin-top: 20%;
+    }
+    body{
+      background-color: hsl(212, 45%, 89%);
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: hsl(0, 0%, 100%);
+      width: 20%;
+      height: 60vh;
+      position: relative;
+      margin-left: 40%;
+      top: 125px;
+      border-radius: 15px;
+    }
+    .img{
+      width: 225px;
+      border-radius:10px;
+    }
+    .image{
+      display: flex;
+      justify-content: center;
+    }
+    .text{
+      text-align: center;
+    }
+    h2{
+      font-size: 15px;
+      font-weight: 700;
+      font-style: bolder;
+      color:hsl(218, 44%, 22%) ;
+    }
+    p{
+      font-size: 12px;
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="images/image-qr-code.png" alt="" class="img">
+    </div>
+    <div class="text">
+      <h2>
+        Improve your front-end <br> skills by building projects
+      </h2>
+      <p>
+        Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level
+      </p>
+    </div>  
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yahaya Abdulsamad Olalekan</a>.
+  </div>
+</body>
+</html>
