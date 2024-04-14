@@ -152,3 +152,33 @@
     bottom: 300px;
   }
 }
+@media screen and (max-width: 1080px) 
+{
+  h1{
+      text-align: center;
+      font-size: 40px;
+      padding: 29px;
+  }
+  .score{
+      position: absolute;
+      top: 120px;
+      width: 100%;
+  }
+  .options{
+      width: 100%;
+      position: absolute;
+      bottom: 400px;
+  }
+  .move{
+    position: absolute;
+    bottom: 500px;
+  }
+  .movesleft{
+    position: absolute;
+    bottom: 300px;
+  }
+  .result{
+    position: absolute;
+    bottom: 200px;
+  }
+}
