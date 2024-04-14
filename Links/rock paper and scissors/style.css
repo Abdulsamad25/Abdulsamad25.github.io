@@ -122,7 +122,7 @@
   }
   
   /* Responsive Design */
-  @media screen and (max-width: 800px) 
+  @media screen and (max-width: 768px) 
 {
   h1{
       text-align: center;
@@ -145,10 +145,10 @@
   }
   .movesleft{
     position: absolute;
-    bottom: 550px;
+    bottom: 400px;
   }
   .result{
     position: absolute;
-    bottom: 420px;
+    bottom: 300px;
   }
 }
