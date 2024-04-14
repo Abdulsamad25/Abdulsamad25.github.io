@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+.img1{
+  width: 300px;
+  margin-left: 36%;
+  margin-top: 2%;
+}
+.txt{
+  text-align: center;
+}
+.img2{
+  width: 300px;
+  margin-left: 36%;
+  margin-top: 2%;
+}
+.txtt{
+  text-align: center;
+
+}
+.txtt1{
+  font-size: 20px;
+  text-align: center;
+}
+.txt1{
+  /* text-align: center; */
+  /* margin-left: 50% */
+  font-size:50px;
+}

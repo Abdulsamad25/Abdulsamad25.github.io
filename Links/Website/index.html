@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body,html{
+  width:100%;
+  height: 100%;
+}
+body{
+  margin:0;
+  padding:0;
+  /* background:#29b6f6; */
+}
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:0;
+  overflow:hidden;
+  top:0;
+  left:0;
+}
+.bubble{
+  position: absolute;
+  bottom:-100px;
+  width:40px;
+  /* height: 40px; */
+  background:green;
+  border-radius:50%;
+  opacity:0.5;
+  animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width:40px;
+  height:40px;
+  left:10%;
+  animation-duration:8s;
+}
+.bubble:nth-child(2){
+  width:20px;
+  height:20px;
+  left:20%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(3){
+  width:50px;
+  height:50px;
+  left:35%;
+  animation-duration:7s;
+  animation-delay:2s;
+}
+.bubble:nth-child(4){
+  width:80px;
+  height:80px;
+  left:50%;
+  animation-duration:11s;
+  animation-delay:0s;
+}
+.bubble:nth-child(5){
+  width:35px;
+  height:35px;
+  left:55%;
+  animation-duration:6s;
+  animation-delay:1s;
+}
+.bubble:nth-child(6){
+  width:45px;
+  height:45px;
+  left:65%;
+  animation-duration:8s;
+  animation-delay:3s;
+}
+.bubble:nth-child(7){
+  width:90px;
+  height:90px;
+  left:70%;
+  animation-duration:12s;
+  animation-delay:2s;
+}
+.bubble:nth-child(8){
+  width:25px;
+  height:25px;
+  left:80%;
+  animation-duration:6s;
+  animation-delay:2s;
+}
+.bubble:nth-child(9){
+  width:15px;
+  height:15px;
+  left:70%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(10){
+  width:90px;
+  height:90px;
+  left:25%;
+  animation-duration:10s;
+  animation-delay:4s;
+}
+@keyframes rise{
+  0%{
+    bottom:-100px;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:1080px;
+    transform:translateX(-200px);
+  }
+}
+  </style>
+  <title>Daily Plus</title>
+</head>
+<body>
+  <section class="sticky">
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      
+    </div>
+  </section>
+    <div class="interface"> 
+
+      <header class="header">
+        <img src="image/IMG_4536.PNG" alt="" class="img">
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-list">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="#">Popular</a>
+            </li>
+            <li class="nav-list">
+                <a href="#">Trending</a>
+            </li>
+            <li class="nav-list">
+              <a href="https://www.globalgiving.org/projects/morocco-earthquake-relief-high-atlas-communities">Donate</a>
+            </li>
+        </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="content">
+          <section class="section1">
+            <!-- <img src="news-homepage/images/image-web-3-desktop.jpg" alt="Homepage picture" class="image">  -->
+            <img src="image/IMG_4537.jpg" alt="" class="image">
+            <div class="text1">
+           <h2>Help needed in Morocco <br> after the earthquake <br> disaster.</h2>
+            </div>
+            <div class="div">
+              <p class="text3">Click the button below to read more <br> about the disaster and how you can also <br>render help</p>
+            </div>
+            <section class="section2">
+              <div class="new">
+                <h3 class="h33">Want to help?</h3>
+              </div>
+              <div class="text2">
+               <h4>High Atlas Foundation</h4>
+               <p class="txt2"> A Morocco-based U.S. nonprofit, is providing food, water and shelter to families in the High Atlas Mountains displaced by the earthquake.</p> 
+               <br>
+               
+              </div>
+              <div class="text2">
+                <h4>Banque Alimentaire</h4>
+                <p class="txt2">The organization collects food from various donors,which it distributes to people in need via more than 200 associations across Morocco.</p>
+                <br>
+                
+              </div>
+              <div class="text2 txt">
+                <h4>CARE</h4>
+                <p class="txt2">CARE Morocco, which launched in 2008, focuses <br> on youth and disadvantaged groups in rural areas of the country.</p>
+              </div>
+            </section>
+          </section>
+        </div> 
+        <!-- <h2>Help needed in Morocco after the horrific <br> earthquake disaster that happened few days ago.</h2>
+        <p>Click the button below to read more <br> about the disaster and how you can also render help.</p> -->
+        <a href="context.html" class="read"><button class="btn1">READ MORE</button></a>
+        <div class="div1">
+          <button class="btn">
+            <a href="https://www.globalgiving.org/projects/morocco-earthquake-relief-high-atlas-communities" class="txttt">Donate</a>
+          </button>
+        </div>
+      </main>
+    </div>
+</body>
+</html>
