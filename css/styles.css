@@ -4,7 +4,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --background-color: #ffffff;
+  --text-color: #21243D;
+  --footer-color: #21243D;
+  --header-background-color: whitesmoke;
+  --header-text-color: #000000;
+  --section-background-color: #f5f5f5;
+  --section-text-color: #000000;
+}
+
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --footer-color: #f1f1f1;
+  --header-background-color: #1f1f1f;
+  --header-text-color: #ffffff;
+  --section-background-color: #1e1e1e;
+  --section-text-color: #ffffff;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+footer {
+  color: var(--footer-color);
+  text-align: center;
+  padding: 0rem;
+  height: 25vh;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+footer {
+  color: var(--footer-color);
+  text-align: center;
+  padding: 0rem;
+  height: 25vh;
+}
+
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+/* header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,7 +63,7 @@ header {
   color: #fff;
   padding: 1rem 0;
   z-index: 1000;
-}
+} */
 
 header .navbar {
   display: flex;
@@ -39,7 +90,7 @@ header .nav-links {
 }
 
 header .nav-links a {
-  color: #21243D;
+  color: var(--text-color);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -49,6 +100,41 @@ header .nav-links a.active {
   color: blue;
 }
 
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle i {
+  font-size: 24px;
+  display: none;
+}
+
+.dark-mode-toggle .fa-sun {
+  color: #f39c12;
+}
+
+.dark-mode-toggle .fa-moon {
+  color: #ffffff;
+}
+
+body.dark-mode .dark-mode-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-mode .dark-mode-toggle .fa-moon {
+  display: inline;
+}
+
+body:not(.dark-mode) .dark-mode-toggle .fa-sun {
+  display: inline;
+}
+
+body:not(.dark-mode) .dark-mode-toggle .fa-moon {
+  display: none;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -92,7 +178,7 @@ header .nav-links a.active {
 
 .info p {
   font-size: 1rem;
-  color: #21243D;
+  color: var(--text-color);
   text-align: start;
   line-height: 1.5;
   text-align: justify;
@@ -111,7 +197,7 @@ header .nav-links a.active {
 }
 
 .projects, .contact{
-  background-color: #fff;
+  background-color: var(--background-color);
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -157,12 +243,12 @@ header .nav-links a.active {
 .project-info h3{
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: #21243D;
+  color: var(--text-color);
 }
 .project-info p{
   font-size: 0.9rem;
   width: 70%;
-  color: #21243D;
+  color: var(--text-color);
   text-align: start;
   line-height: 1.5;
   text-align: justify;
@@ -180,7 +266,7 @@ header .nav-links a.active {
 }
 
 footer {
-  color: #21243D;
+  color: var(--text-color);
   text-align: center;
   padding: 0rem;
   height: 25vh;
@@ -193,7 +279,7 @@ footer .social-icons {
 }
 
 footer .social-icons a {
-  color: #21243D;
+  color: var(--text-color);
   font-size: 2rem;
   text-decoration: none;
 }
@@ -204,10 +290,12 @@ footer p{
 @media (max-width: 768px) {
   header .menu-icon {
     display: block;
-    color: #21243D;
+    color: var(--text-color);
     font-size: 1.5rem;
   }
-
+  header .navbar{
+    justify-content: left;
+  }
   header .nav-links {
     display: none;
     flex-direction: column;
@@ -216,7 +304,7 @@ footer p{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #21243D;
+    background-color: var(--background-color);
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -227,7 +315,7 @@ footer p{
   }
 
   header .nav-links a {
-    color: #fff;
+    color: var(--text-color);
     font-size: 1rem;
     margin: 1rem 0;
   }
@@ -238,7 +326,7 @@ footer p{
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #fff;
+    color: var(--text-color);
     display: block;
   }
 
